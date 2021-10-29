@@ -48,28 +48,28 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="WindowsBase" />
+    <!-- <Reference Include="WindowsBase" /> -->
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <!-- <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    </ApplicationDefinition> -->
     <Compile Include="SBKLibrary.cs" />
-    <Page Include="MainWindow.xaml">
+    <!-- <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
+    </Page> -->
+    <!-- <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    </Compile> -->
+    <Compile Include="Console.cs">
+      <!-- <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType> -->
     </Compile>
   </ItemGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,7 +92,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
+  </ItemGroup> -->
   <ItemGroup>
     <Content Include="Pica_Func.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
