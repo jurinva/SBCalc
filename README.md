@@ -16,7 +16,10 @@ Example:
 $ cat run.bat
 SBCalc.exe
 pause
-$ env WINEPREFIX="/home/vyurin/prefix32" WINEARCH=win32 wineconsole run.bat
+$ Z:\home\vyurin\Downloads\Github\SBCalc\bin\Debug>SBCalc.exe
+Enter your CPUID:
+380618743403597
+0x17D81E00 0xCB15F601 0x8B5F1203 0xB0512103
 ```
 
 Unfortunately application don't worked under Windows 10
@@ -24,4 +27,16 @@ Unfortunately application don't worked under Windows 10
 C:\>SBCalc.exe
 
 C:\>
+```
+How to get CPUID
+```bash
+$ lsusb -v | grep -5 ACER | grep -i serial
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+  iSerial                 3 380618743403597
 ```
