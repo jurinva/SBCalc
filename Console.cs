@@ -18,7 +18,6 @@ namespace SBCalc
       {
           string SBKCodeResult = "";
           int l_sbkResult = SBKLibrary.GetEncoder(txtCPUID, ref SBKCodeResult);
-          Console.WriteLine(txtCPUID);
           if (SBKCodeResult != null && SBKCodeResult != "")
           {
               char[] rmChar = { '\\', '0' };

@@ -9,3 +9,19 @@ How to compile on Ubuntu:
 $ sudo apt-get install mono-complete
 $ xbuild /p:Configuration=Debug /p:TargetFrameworkVersion=v4.5 /p:TargetFrameworkProfile="" SBCalc.csproj
 ```
+
+To run application file you need wine
+Example:
+```bash
+$ cat run.bat
+SBCalc.exe
+pause
+$ env WINEPREFIX="/home/vyurin/prefix32" WINEARCH=win32 wineconsole run.bat
+```
+
+Unfortunately application don't worked under Windows 10
+```cmd
+C:\>SBCalc.exe
+
+C:\>
+```
